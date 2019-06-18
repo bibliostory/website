@@ -23,8 +23,6 @@ module.exports = {
     ecmaFeatures: {
       jsx: true,
     },
-    ecmaVersion: 2018, // Allows for the parsing of modern ECMAScript features
-    sourceType: 'module', // Allows for the use of imports
   },
   rules: {
     'react/prop-types': 'off', // Disable prop-types as we use TypeScript for type checking

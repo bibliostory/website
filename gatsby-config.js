@@ -1,11 +1,17 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby-TS-MDX-PrismJs-Starter',
-    description: 'Gatsby-TS-MDX-PrismJs-Starter',
-    keywords: 'One keyword, two keywords',
+    title: 'BiblioStory',
+    description:
+      'BiblioStory allows you to follow your old books throughout their travels',
+    keywords: 'One book, many lives',
   },
   plugins: [
-    'gatsby-plugin-typography',
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography`,
+      },
+    },
     'gatsby-plugin-react-helmet',
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
@@ -20,19 +26,19 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    // {
-    //   resolve: `gatsby-plugin-manifest`,
-    //   options: {
-    //     name: "Gatsby-TS-MDX-PrismJs-Starter",
-    //     short_name: 'Gatsby-Starter',
-    //     start_url: '/',
-    //     background_color: '#663399',
-    //     theme_color: '#663399',
-    //     display: 'minimal-ui',
-    // icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
-    // },
-    // },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.app/offline
+    {
+      resolve: `gatsby-plugin-manifest`,
+      /* eslint-disable @typescript-eslint/camelcase */
+      options: {
+        name: 'BiblioStory',
+        short_name: 'BiblioStory',
+        start_url: '/',
+        background_color: '#663399',
+        theme_color: '#663399',
+        display: 'minimal-ui',
+        // icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
+      },
+      /* eslint-enable @typescript-eslint/camelcase */
+    },
   ],
 };

@@ -20,29 +20,28 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
+    "react-is": "^16.8.6",
     "react-typography": "^0.16.19",
-    "styled-components": "^5.0.0-beta.2",
-    "typography": "^0.16.19"
+    "styled-components": "^5.0.0-beta.3",
+    "typography": "^0.16.19",
+    "typography-theme-noriega": "^0.16.19"
   },
-  "keywords": [
-    "gatsby",
-    "typescript",
-    "prismjs",
-    "styled-components"
-  ],
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "dev": "gatsby develop",
+    "start": "gatsby develop",
     "test": "jest",
+    "type-check": "tsc --noEmit",
     "lint": "eslint --ignore-path .gitignore . --ext ts --ext tsx --ext js --ext jsx",
     "lint:fix": "eslint --ignore-path .gitignore . --ext ts --ext tsx --ext js --ext jsx --fix"
   },
   "devDependencies": {
+    "@babel/core": "^7.0.0-0",
     "@testing-library/react": "^8.0.1",
     "@types/jest": "^24.0.15",
     "@types/react-helmet": "^5.0.8",
     "@types/styled-components": "^4.1.16",
+    "@types/typography": "^0.16.2",
     "@typescript-eslint/eslint-plugin": "^1.10.2",
     "@typescript-eslint/parser": "^1.10.2",
     "eslint": "^5.16.0",
@@ -56,6 +55,7 @@
     "loader-utils": "^1.2.3",
     "prettier": "^1.18.2",
     "react-hooks-testing-library": "^0.5.1",
+    "react-test-renderer": "^16.8.6",
     "sharp": "^0.22.1",
     "ts-jest": "^24.0.2",
     "typescript": "^3.5.2"
