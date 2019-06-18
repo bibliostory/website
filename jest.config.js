@@ -1,5 +1,5 @@
 module.exports = {
-  setupTestFrameworkScriptFile: './jest.setup.js',
+  setupFilesAfterEnv: ['./jest.setup.js'],
   globals: {
     __PATH_PREFIX__: '',
   },

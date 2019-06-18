@@ -1,11 +1,20 @@
 import { graphql, useStaticQuery } from 'gatsby';
 
+interface SiteData {
+  site: {
+    siteMetadata: {
+      title: string;
+      description: string;
+      keywords: string;
+    };
+  };
+}
+
 export const useLayoutQuery = () => {
-  const { site } = useStaticQuery(graphql`
+  const { site } = useStaticQuery<SiteData>(graphql`
     query SiteTitleQuery {
       site {
         siteMetadata {
-          # change siteMetaData in 'gatsby-config.js'
           title
           description
           keywords

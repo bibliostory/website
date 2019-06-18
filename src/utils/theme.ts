@@ -53,15 +53,20 @@ export const breakpoints = Object.freeze<['40em', '52em', '64em']>([
   '64em',
 ]);
 
-export const mediaQueries = Object.freeze<
-  Record<'small' | 'medium' | 'large', string>
->({
-  small: `@media screen and (min-width: ${breakpoints[0]})`,
-  medium: `@media screen and (min-width: ${breakpoints[1]})`,
-  large: `@media screen and (min-width: ${breakpoints[2]})`,
+export const mediaQueries = Object.freeze<Record<'sm' | 'md' | 'lg', string>>({
+  sm: `@media screen and (min-width: ${breakpoints[0]})`,
+  md: `@media screen and (min-width: ${breakpoints[1]})`,
+  lg: `@media screen and (min-width: ${breakpoints[2]})`,
 });
 
-const theme = Object.freeze({
+export interface Theme {
+  colors: typeof colors;
+  space: typeof space;
+  breakpoints: typeof breakpoints;
+  mediaQueries: typeof mediaQueries;
+}
+
+const theme = Object.freeze<Theme>({
   colors,
   space,
   breakpoints,

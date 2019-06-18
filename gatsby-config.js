@@ -25,7 +25,7 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
-
+    'gatsby-plugin-typescript',
     'gatsby-image',
     'gatsby-plugin-styled-components',
     'gatsby-plugin-offline',
@@ -38,17 +38,18 @@ module.exports = {
     // },
     {
       resolve: `gatsby-plugin-manifest`,
-      /* eslint-disable @typescript-eslint/camelcase */
+
       options: {
         name: 'BiblioStory',
+        /* eslint-disable @typescript-eslint/camelcase */
         short_name: 'BiblioStory',
         start_url: '/',
         background_color: '#663399',
         theme_color: '#663399',
+        /* eslint-enable @typescript-eslint/camelcase */
         display: 'minimal-ui',
         // icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
       },
-      /* eslint-enable @typescript-eslint/camelcase */
     },
   ],
 };

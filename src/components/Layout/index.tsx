@@ -21,9 +21,11 @@ interface LayoutProps {
 }
 
 const Layout = ({ children }: LayoutProps & RouterProps) => {
-  const { site } = useLayoutQuery();
-
-  const { title, description, keywords } = site.siteMetadata;
+  const {
+    site: {
+      siteMetadata: { title, description, keywords },
+    },
+  } = useLayoutQuery();
 
   return (
     <ThemeProvider theme={theme}>
