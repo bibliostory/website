@@ -7,6 +7,7 @@ module.exports = {
     siteUrl: 'https://www.bibiostory.com',
   },
   plugins: [
+    `gatsby-plugin-netlify`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
