@@ -19,13 +19,13 @@ module.exports = {
     'gatsby-image',
     'gatsby-plugin-styled-components',
     'gatsby-plugin-offline',
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'images',
-        path: `${__dirname}/src/images`,
-      },
-    },
+    // {
+    //   resolve: 'gatsby-source-filesystem',
+    //   options: {
+    //     name: 'images',
+    //     path: `${__dirname}/src/images`,
+    //   },
+    // },
     {
       resolve: `gatsby-plugin-manifest`,
       /* eslint-disable @typescript-eslint/camelcase */
