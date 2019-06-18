@@ -11,7 +11,15 @@ interface SiteData {
 }
 
 export const useLayoutQuery = () => {
-  const { site } = useStaticQuery<SiteData>(graphql`
+  const {
+    site = {
+      siteMetadata: {
+        title: '',
+        description: '',
+        keywords: '',
+      },
+    },
+  } = useStaticQuery<SiteData>(graphql`
     query SiteTitleQuery {
       site {
         siteMetadata {

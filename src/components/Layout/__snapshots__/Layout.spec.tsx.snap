@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Layout /> renders 1`] = `
+<main
+  className="sc-AykKC"
+>
+  <div>
+    children
+  </div>
+</main>
+`;
