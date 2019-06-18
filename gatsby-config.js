@@ -4,6 +4,7 @@ module.exports = {
     description:
       'BiblioStory allows you to follow your old books throughout their travels',
     keywords: 'One book, many lives',
+    siteUrl: 'https://www.bibiostory.com',
   },
   plugins: [
     {
@@ -12,10 +13,19 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
+    `gatsby-plugin-sitemap`,
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://www.bibiostory.com',
+        sitemap: 'https://www.bibiostory.com/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }],
+      },
+    },
     'gatsby-plugin-react-helmet',
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
-    'gatsby-plugin-typescript',
+
     'gatsby-image',
     'gatsby-plugin-styled-components',
     'gatsby-plugin-offline',

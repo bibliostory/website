@@ -12,7 +12,7 @@ const MainLayout = styled.main`
 
 const GlobalStyle = createGlobalStyle`
   body {
-    background-color: #fbfbf7;
+    background-color: ${({ theme }) => theme.colors.primary};
   }
 `;
 
