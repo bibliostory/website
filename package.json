@@ -24,18 +24,7 @@
     "react-typography": "^0.16.19",
     "styled-components": "^5.0.0-beta.3",
     "typography": "^0.16.19",
-    "typography-theme-noriega": "^0.16.19"
-  },
-  "license": "MIT",
-  "scripts": {
-    "build": "gatsby build",
-    "start": "gatsby develop",
-    "test": "jest",
-    "type-check": "tsc --noEmit",
-    "lint": "eslint --ignore-path .gitignore . --ext ts --ext tsx --ext js --ext jsx",
-    "lint:fix": "eslint --ignore-path .gitignore . --ext ts --ext tsx --ext js --ext jsx --fix"
-  },
-  "devDependencies": {
+    "typography-theme-noriega": "^0.16.19",
     "@babel/core": "^7.0.0-0",
     "@testing-library/react": "^8.0.1",
     "@types/jest": "^24.0.15",
@@ -59,6 +48,15 @@
     "sharp": "^0.22.1",
     "ts-jest": "^24.0.2",
     "typescript": "^3.5.2"
+  },
+  "license": "MIT",
+  "scripts": {
+    "build:prod": "gatsby build",
+    "start": "gatsby develop",
+    "test": "jest",
+    "type-check": "tsc --noEmit",
+    "lint": "eslint --ignore-path .gitignore . --ext ts --ext tsx --ext js --ext jsx",
+    "lint:fix": "eslint --ignore-path .gitignore . --ext ts --ext tsx --ext js --ext jsx --fix"
   },
   "repository": {
     "type": "git",
