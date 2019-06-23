@@ -4,7 +4,7 @@ module.exports = {
     description:
       'BiblioStory allows you to follow your old books throughout their travels',
     keywords: 'One book, many lives',
-    siteUrl: 'https://www.bibiostory.com',
+    siteUrl: 'https://www.Bibliostory.com',
   },
   plugins: [
     `gatsby-plugin-netlify`,
@@ -32,8 +32,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: 'https://www.bibiostory.com',
-        sitemap: 'https://www.bibiostory.com/sitemap.xml',
+        host: 'https://www.Bibliostory.com',
+        sitemap: 'https://www.Bibliostory.com/sitemap.xml',
         policy: [{ userAgent: '*', allow: '/' }],
       },
     },
